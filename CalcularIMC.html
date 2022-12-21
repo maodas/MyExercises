@@ -4,9 +4,30 @@
    pesoIngresado = prompt(nombre + ", Ingrese su peso");
    alturaIngresada = prompt(nombre + ", Ingrese su altura");
 
+   function calcularImc(peso,altura){
+      return(peso/(altura*altura));
+   }
+
    imcCalculado = calcularImc(pesoIngresado,alturaIngresada);
    document.write(nombre + ", su IMC calculado es: "+imcCalculado);
-    
+
+   if(imcCalculado < 18.5){
+      document.write(", su IMC esta abajo de lo recomendado");
+   }
+   if(imcCalculado >= 18.5){
+      if(imcCalculado < 25){
+         document.write(", el IMC esta dentro del intervalo normal");
+      }
+   }
+   if(imcCalculado >= 25){
+      if(imcCalculado < 30){
+         document.write(", el IMC esta considerado como sobrepeso");
+      }
+   }
+   if(imcCalculado > 30){
+      document.write(", el IMC esta dentro de obesidad");
+   }
+
 
 
 
