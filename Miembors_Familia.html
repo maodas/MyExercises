@@ -1,0 +1,20 @@
+<h1>Promedio de edades de su familia</h1>
+    <script>
+        var numeroMiembros = parseInt(prompt("Ingrese la cantidad de miembros de su familia"));
+        var contador =1;
+        var totalEdades = 0;
+
+        while(contador <= numeroMiembros){
+            
+            var edad = parseInt(prompt("Ingrese la edad del familiar"));
+            totalEdades = totalEdades+edad;
+            contador++;
+            
+        }
+
+        var mediaedades = totalEdades/numeroMiembros;
+        document.write("La media de edades es: "+mediaedades);
+
+
+
+    </script>
