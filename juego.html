@@ -1,0 +1,22 @@
+<meta charset="UTF=8">
+<input/>
+<button>Verificar si acerto</button>
+
+<script>
+    var adivinar = 5;
+    var input = document.querySelector("input");
+
+    function verificar(){
+        if(parseInt(input.value) == adivinar){
+            alert("Usted acerto");
+        }else{
+         alert("Usted erro");
+        }
+
+    }
+
+    var button = document.querySelector("button");
+    button.onclick = verificar;
+    
+
+</script>
